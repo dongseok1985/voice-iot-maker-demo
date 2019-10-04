@@ -13,14 +13,17 @@
     "lint": "eslint --fix \"**/*.js\"",
     "start": "nodemon app.js",
     "deploy": "gcloud app deploy",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "actions-on-google": "^1.5.1",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "nodemon": "^1.12.1",
-    "particle-api-js": "^6.4.3"
+    "particle-api-js": "^6.4.3",
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
@@ -30,5 +33,6 @@
     "eslint-plugin-node": "^5.0.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1"
-  }
+  },
+  "snyk": true
 }
