@@ -19,7 +19,7 @@
     "actions-on-google": "^1.5.1",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "nodemon": "^1.12.1",
+    "nodemon": "^2.0.0",
     "particle-api-js": "^6.4.3"
   },
   "devDependencies": {
